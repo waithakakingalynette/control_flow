@@ -18,3 +18,4 @@ class Fruit:
 
     def sell_juice(self):
         return f"I sold {self.taste} {self.name} juice at a price of {self.price}ksh per glass"
+# The methods should be what a fruit can do eg:rippen,fall,germinate.
