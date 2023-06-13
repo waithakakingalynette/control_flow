@@ -80,18 +80,20 @@ class Account:
     def borrow_loan(self):
          if self.loan_balance > 0:
             print("Sorry you have an already outstanding loan.")
+            else:
+                print("")
             return
 
-        if amount <= 100:
+        elif amount <= 100:
             print("The loan amount requested is less than 100.")
             return
 
-        if len(self.deposits) < 10:
+        elif len(self.deposits) < 10:
             print("Sorry, you  must have made at least 10 deposits.")
             return
 
         total_deposits = sum(self.deposits)
-        if amount > total_deposits / 3:
+        elif amount > total_deposits / 3:
             print("Loan amount cannot be more than 1/3 of total deposits.")
             return
 
